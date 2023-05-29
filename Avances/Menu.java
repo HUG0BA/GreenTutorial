@@ -19,15 +19,19 @@ public class Menu extends World
         super(600, 400, 1); 
         prepare();
     }
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
      */
     private void prepare()
     {
+
+        MenuMusic menuMusic = new MenuMusic();
+        addObject(menuMusic,0,1);
         Title title = new Title();
-        addObject(title,273,171);
-        title.setLocation(298,197);
+        addObject(title,299,192);
+        title.setLocation(300,217);
     }
     
     public void act (){

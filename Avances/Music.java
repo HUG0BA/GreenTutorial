@@ -18,7 +18,7 @@ public class Music extends Actor
     {
         
         if (playing == true){
-            GreenfootSound music = new GreenfootSound("BackgroundMusic.mp3");
+            GreenfootSound music = new GreenfootSound("goodMusic.mp3");
             music.playLoop();
             playing = false;
             
